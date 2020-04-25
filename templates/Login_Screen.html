@@ -2881,7 +2881,7 @@ window.application = new Application();
 			<rect fill="rgba(255,255,255,1)" id="Frame" rx="0" ry="0" x="0" y="0" width="375" height="44">
 			</rect>
 		</svg>
-		<div id="Status_Bar_bo">
+		<div id="Status_Bar_bo" style="display: none;">
 			<div id="Battery">
 				<svg class="Border">
 					<rect fill="rgba(8,8,8,1)" stroke="rgba(0,0,0,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="10" shape-rendering="auto" id="Border" rx="2.6666667461395264" ry="2.6666667461395264" x="0" y="0" width="22" height="11.333">
@@ -2969,8 +2969,8 @@ window.application = new Application();
 	<div id="ho_c___ng_nh_p_b_ng">
 		<span>hoặc đăng nhập bằng</span>
 	</div>
-	<img id="Image_1" src="Image_1.png" srcset="Image_1.png 1x, Image_1@2x.png 2x">
-	<img id="Image_2" src="Image_2.png" srcset="Image_2.png 1x, Image_2@2x.png 2x">
+	<img id="Image_1" src="{{url_for('static', filename='Image_1.png')}}" srcset="Image_1.png 1x, Image_1@2x.png 2x">
+	<img id="Image_2" src="{{url_for('static', filename='Image_2.png')}}"srcset="Image_2.png 1x, Image_2@2x.png 2x">
 	<svg class="Line_2" viewBox="0 0 105 1">
 		<path fill="transparent" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_2" d="M 0 0 L 105 0">
 		</path>
@@ -2989,11 +2989,10 @@ window.application = new Application();
 			</path>
 		</svg>
 	</div>
-	<div id="T_n___ng_nh_p">
-		<span>Tên đăng nhập</span>
-	</div>
 	<div id="M_t_kh_u">
-		<span>Mật khẩu</span>
+		<!-- <span>Mật khẩu</span> -->
+		<input type="password" id="password" placeholder="Mật khẩu" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Mật khẩu'" style="background: transparent; border: none; outline: none;">
+
 	</div>
 	<div id="Group_4">
 		<div id="Group_3_co">
@@ -3003,6 +3002,10 @@ window.application = new Application();
 			</svg>
 		</div>
 	</div>
+	<div id="T_n___ng_nh_p">
+		<!-- <span>Tên đăng nhập</span> -->
+		<input id="username" placeholder="Tên đăng nhập" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tên đăng nhập'" style="background: transparent; border: none; outline: none;">
+	
 </div>
 </body>
 </html>
