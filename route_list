@@ -1,0 +1,5 @@
+[Route list]
+/login
+/signup
+/create_goal
+/get_goal
