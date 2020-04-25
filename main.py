@@ -6,3 +6,10 @@ app = Flask(__name__)
 @app.route("/")
 def hello_covid():
 	return render_template('login.html')
+
+@app.route("/login")
+def login():
+	return render_template('Login_Screen.html')
+
+if __name__ == "__main__":
+	app.run(debug=True)
