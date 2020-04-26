@@ -15,6 +15,7 @@ def login():
 
 @app.route("/create_goal_1")
 def create_goal_1():
+	user_data ={}
 	return render_template('create_goal_1.html')
 	
 @app.route("/create_goal_2/<goaltype>")
