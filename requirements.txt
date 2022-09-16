@@ -40,7 +40,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 lensfun==0.3.95
 louis==3.13.0
-Mako==1.1.2
+Mako==1.2.2
 MarkupSafe==1.1.1
 msgpack==1.0.0
 ordered-set==3.1.1
